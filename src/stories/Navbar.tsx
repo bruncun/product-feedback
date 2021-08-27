@@ -1,4 +1,4 @@
-import { Text, Box, Button } from "theme-ui";
+import { Text, Heading, Box, Button } from "theme-ui";
 import iconHamburger from "./assets/shared/mobile/icon-hamburger.svg";
 import iconClose from "./assets/shared/mobile/icon-close.svg";
 
@@ -20,18 +20,15 @@ const Navbar = ({ onToggleSidebar, state = "SIDEBAR_CLOSED" }: NavbarProps) => (
   >
     <Box sx={{ px: 3, display: "flex", justifyContent: "space-between" }}>
       <Box sx={{ color: "white" }}>
-        <Text
+        <Heading
+          variant="h4"
           sx={{
             display: "block",
-            fontWeight: 3,
-            fontSize: 2,
-            letterSpacing: "-.1875px",
-            lineHeight: "21px",
           }}
         >
           Frontend Mentor
-        </Text>
-        <Text sx={{ fontWeight: 0, opacity: "75%", fontSize: 0 }}>
+        </Heading>
+        <Text sx={{ fontWeight: "regular", opacity: "75%", fontSize: 0 }}>
           Feedback Board
         </Text>
       </Box>

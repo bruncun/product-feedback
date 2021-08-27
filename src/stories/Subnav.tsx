@@ -25,13 +25,13 @@ const Subnav = ({ onSortBy, onAddFeedback }: SubnavProps) => (
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Text sx={{ color: "offwhite", fontSize: 0 }}>Sort by : </Text>&nbsp;
+        <Text sx={{ color: "lighterGray", fontSize: 0 }}>Sort by : </Text>&nbsp;
         <Select
           arrow={<img src={iconArrowDown} />}
           sx={{
             background: "transparent",
-            color: "offwhite",
-            fontWeight: 3,
+            color: "lighterGray",
+            fontWeight: "bold",
             fontSize: 0,
             border: 0,
             py: 0,
