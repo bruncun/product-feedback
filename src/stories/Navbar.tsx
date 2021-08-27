@@ -1,4 +1,3 @@
-import React from "react";
 import { Text, Box, Button } from "theme-ui";
 import iconHamburger from "./assets/shared/mobile/icon-hamburger.svg";
 import iconClose from "./assets/shared/mobile/icon-close.svg";

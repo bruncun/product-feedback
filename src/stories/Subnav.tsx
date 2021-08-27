@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Text, Select, Button } from "theme-ui";
 import iconArrowDown from "./assets/shared/icon-arrow-down.svg";
 
