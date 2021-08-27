@@ -1,10 +1,11 @@
 logs
+*.swp
 *.log
 npm-debug.log*
 .DS_Store
 
 coverage
-node_modules
+/node_modules
 build
 public/static
 .env.local
