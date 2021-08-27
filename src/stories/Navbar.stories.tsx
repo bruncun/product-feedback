@@ -15,4 +15,9 @@ export default {
 
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
-export const Default = Template.bind({});
+export const SidebarClosed = Template.bind({});
+
+export const SidebarOpen = Template.bind({});
+SidebarOpen.args = {
+  state: "SIDEBAR_OPEN",
+};

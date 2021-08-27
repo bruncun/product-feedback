@@ -1,12 +1,14 @@
 import React from "react";
 import { Text, Box, Button } from "theme-ui";
 import iconHamburger from "./assets/shared/mobile/icon-hamburger.svg";
+import iconClose from "./assets/shared/mobile/icon-close.svg";
 
 interface NavbarProps {
+  state?: string;
   onToggleSidebar: () => void;
 }
 
-const Navbar = ({ onToggleSidebar: toggleSidebar }: NavbarProps) => (
+const Navbar = ({ onToggleSidebar, state = "SIDEBAR_CLOSED" }: NavbarProps) => (
   <Box
     as="nav"
     sx={{
@@ -36,10 +38,14 @@ const Navbar = ({ onToggleSidebar: toggleSidebar }: NavbarProps) => (
       </Box>
       <Button
         sx={{ p: 0, background: "transparent", zIndex: 1 }}
-        onClick={toggleSidebar}
+        onClick={onToggleSidebar}
         data-testid="sidebar-toggle"
       >
-        <img src={iconHamburger} />
+        {state === "SIDEBAR_CLOSED" ? (
+          <img src={iconHamburger} data-testid="hamburger-icon" />
+        ) : (
+          <img src={iconClose} data-testid="close-icon" />
+        )}
       </Button>
     </Box>
     <Box
