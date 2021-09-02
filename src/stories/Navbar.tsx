@@ -2,7 +2,7 @@ import { Text, Heading, Box, Button } from "theme-ui";
 import iconHamburger from "./assets/shared/mobile/icon-hamburger.svg";
 import iconClose from "./assets/shared/mobile/icon-close.svg";
 
-interface NavbarProps {
+export interface NavbarProps {
   state?: string;
   onToggleSidebar: () => void;
 }
@@ -18,8 +18,14 @@ const Navbar = ({ onToggleSidebar, state = "SIDEBAR_CLOSED" }: NavbarProps) => (
       p: 4,
     }}
   >
-    <Box sx={{ px: 3, display: "flex", justifyContent: "space-between" }}>
-      <Box sx={{ color: "white" }}>
+    <Box
+      sx={{
+        px: 3,
+        display: "flex",
+        justifyContent: "space-between",
+      }}
+    >
+      <Box sx={{ color: "white", zIndex: 1 }}>
         <Heading
           variant="h4"
           sx={{

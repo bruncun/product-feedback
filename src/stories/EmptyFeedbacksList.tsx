@@ -1,12 +1,12 @@
 import { Card, Heading, Button, Box, Image, Paragraph } from "theme-ui";
 import illustrationEmpty from "./assets/suggestions/illustration-empty.svg";
 
-interface FeedbackEmptyStateProps {
+export interface EmptyFeedbacksListProps {
   onAddFeedback: () => void;
 }
 
-const FeedbackEmptyState = ({ onAddFeedback }: FeedbackEmptyStateProps) => (
-  <Card>
+const EmptyFeedbacksList = ({ onAddFeedback }: EmptyFeedbacksListProps) => (
+  <Card data-testid="feedback-empty">
     <Box
       sx={{
         my: 3,
@@ -37,4 +37,4 @@ const FeedbackEmptyState = ({ onAddFeedback }: FeedbackEmptyStateProps) => (
   </Card>
 );
 
-export default FeedbackEmptyState;
+export default EmptyFeedbacksList;

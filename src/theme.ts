@@ -24,10 +24,12 @@ const theme: Theme = {
     root: {
       fontFamily: "body",
       color: "darkerGray",
+      bg: "lightGray",
     },
   },
   colors: {
     lighterGray: "#F2F4FE",
+    lightGray: "#F7F8FD",
     purple: "#AD1FEA",
     darkerGray: "#3A4374",
   },

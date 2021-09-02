@@ -1,7 +1,7 @@
 import { Box, Text, Select, Button } from "theme-ui";
 import iconArrowDown from "./assets/shared/icon-arrow-down.svg";
 
-interface SubnavProps {
+export interface SubnavProps {
   onSortBy: () => void;
   onAddFeedback: () => void;
 }
